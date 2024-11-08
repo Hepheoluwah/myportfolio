@@ -2,7 +2,7 @@
 
 # Personal Portfolio
 
-This is my personal portfolio website, built with Next.js. It showcases my projects, skills, and contact information through a clean, responsive, and user-friendly interface.
+This is my personal portfolio website, built with Next.js. It showcases my projects, skills, experience, education and contact information through a clean, responsive, and user-friendly interface.
 
 ## Overview
 
@@ -12,6 +12,8 @@ This portfolio website provides a centralized place for showcasing my work. Itâ€
 
 - **About Me**: A brief introduction about who I am and what I do.
 - **Projects Showcase**: A gallery of projects with descriptions, technologies used, and live/demo links.
+- **Experience Section**:Highlights my professional experience in software engineering, showcasing key roles, responsibilities, and achievements.
+- **Education Section**: Displays my educational background and certifications, providing insight into my formal training and qualifications.
 - **Skills Section**: A list of my technical skills.
 - **Contact Form**: Allows visitors to send me messages directly.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
