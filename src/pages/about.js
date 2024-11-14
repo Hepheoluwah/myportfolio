@@ -58,23 +58,30 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I&apos;m Ifeoluwa, a web developer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 5 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients visions to life.
+                Hi there! I&apos;m Ifeoluwa, a web developer with over 5 years
+                of experience making digital things work and look good while
+                doing it. I love creating web apps and backend systems that not
+                only solve real problems but also make people&apos;s lives
+                easier and more enjoyable. Think of me as the friendly tech
+                wizard behind the curtain, keeping everything running smoothly
+                and looking sharp. I&apos;m all about turning ideas into
+                user-friendly realities, whether it&apos;s a school management
+                tool, a pet adoption app, or any other project that needs some
+                technical magic.
               </p>
               <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                My toolkit includes JavaScript, React, Node.js, and MongoDB, and
+                I&apos;m always on the hunt for new tricks and tools to improve
+                my craft. When it comes to design, I believe in making things
+                that are intuitive and easy to use. It&apos;s not just about
+                being flashy; it&apos;s about creating experiences that feel
+                natural and keep people coming back.
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                So, whether you&apos;re looking to build something from scratch
+                or just need a hand with the techy stuff, I&apos;m here to help!
+                Let&apos;s make something great together and have some fun along
+                the way.
               </p>
             </div>
 
