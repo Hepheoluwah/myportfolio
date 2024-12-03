@@ -6,8 +6,9 @@ import Link from "next/link";
 import { GithubIcon } from "@/components/Icons";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import DoggosApi from "../../public/images/projects/doggosApi.jpg";
+// import DoggosApi from "../../public/images/projects/doggosApi.jpg";
 import Adoptme from "../../public/images/projects/ADOPT ME LOGO 3.png";
+import Edutrack from "../../public/images/projects/Edutrack.jpg"
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -157,6 +158,26 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
+                title="EduTrack!"
+                img={Edutrack}
+                summary="EduTrack is a comprehensive school management system designed to streamline class organization, student and faculty management, and administrative tasks. It enables seamless attendance tracking, performance assessment, and feedback delivery. With easy access to records, marks, and communication tools, EduTrack simplifies educational management for administrators, teachers, and students."
+                link="https://edutrackconnect.netlify.app"
+                github="https://github.com/Hepheoluwah/EduTrack"
+                type="FeaturedProject"
+                technologies={[
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "ReactJS",
+                  "Tailwind CSS",
+                  "API Integration",
+                  "Netlify"
+                ]}
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
                 title="Adopt Me!"
                 img={Adoptme}
                 summary="The Adopt Me project is designed to facilitate pet adoption by providing a user-friendly interface for browsing and adopting pets. It aims to connect potential pet owners with animals available for adoption from various shelters or organizations."
@@ -174,6 +195,13 @@ const projects = () => {
                 ]}
               />
             </div>
+
+            
+
+            
+
+
+
 
             <div className="col-span-12 text-center mt-12 text-4xl font-extrabold text-primary dark:text-light tracking-wide">
               Stay tuned for more exciting projects coming soon!
