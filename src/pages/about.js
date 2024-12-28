@@ -58,30 +58,24 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi there! I&apos;m Ifeoluwa, a web developer with over 5 years
-                of experience making digital things work and look good while
-                doing it. I love creating web apps and backend systems that not
-                only solve real problems but also make people&apos;s lives
-                easier and more enjoyable. Think of me as the friendly tech
-                wizard behind the curtain, keeping everything running smoothly
-                and looking sharp. I&apos;m all about turning ideas into
-                user-friendly realities, whether it&apos;s a school management
-                tool, a pet adoption app, or any other project that needs some
-                technical magic.
+
+                  Hi there! I&apos;m Ifeoluwa, a software engineer who genuinely enjoys creating tools that make life easier for people. 
+                  I focus on building web apps and backend systems that aren&apos;t just functional but also intuitive and enjoyable to use. 
+                  For me, it&apos;s about finding simple solutions to complex problems and delivering work that makes an impact.
+
+                 
+          
               </p>
               <p className="my-4 font-medium">
-                My toolkit includes JavaScript, React, Node.js, and MongoDB, and
-                I&apos;m always on the hunt for new tricks and tools to improve
-                my craft. When it comes to design, I believe in making things
-                that are intuitive and easy to use. It&apos;s not just about
-                being flashy; it&apos;s about creating experiences that feel
-                natural and keep people coming back.
+              I work mostly with JavaScript, React, Node.js, and MongoDB, and I&apos;m currently diving into cloud computing as I work toward becoming an AWS Cloud Engineer. 
+                  I&apos;m excited about the possibilities cloud technology brings for scalability and efficiency, and I&apos;m eager to bring that into the projects I work on.
+
               </p>
               <p className="font-medium">
-                So, whether you&apos;re looking to build something from scratch
-                or just need a hand with the techy stuff, I&apos;m here to help!
-                Let&apos;s make something great together and have some fun along
-                the way.
+              At the core of it all, I&apos;m someone who values collaboration and continuous learning. 
+                    I&apos;m always open to new challenges and opportunities to grow. 
+                    If you&apos;re looking for someone who&apos;s driven, curious, and ready to contribute, let&apos;s connect 
+                    I&apos;d love to bring my skills and passion to your team!
               </p>
             </div>
 
