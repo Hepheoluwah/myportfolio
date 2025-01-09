@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 import HireMe from "@/components/HireMe";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
-import profilePic2 from "../../public/images/profile/myself2.png";
-import profilePic3 from "../../public/images/profile/github-profile.jpg";
+
+import profilePic from "../../public/images/profile/ifeoluwa3.png"
+import profilePic2 from "../../public/images/profile/ifeoluwa1.png";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkIcon } from "../components/Icons";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
@@ -24,11 +24,11 @@ export default function Home() {
 
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout classsName="pt-0 md:pt-16 sm:pt-8">
+        <Layout classsName="pt-0 md:pt-16 sm:pt-8 ml-[10rem]">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w1/2 md:w-full">
               <Image
-                src={profilePic2}
+                src={profilePic}
                 alt="ifeoluwa"
                 // add "ml-16" for big screen
                 className="w-full h-autolg:hidden md:inline-block md:w-full  " // Adjust the margin-left to move the image further to the right
