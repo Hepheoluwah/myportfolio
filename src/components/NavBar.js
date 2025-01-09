@@ -6,7 +6,7 @@ import {
   TwitterIcon,
   LinkedInIcon,
   GithubIcon,
-  DribbleIcon,
+  // DribbleIcon,
   RedditIcon,
   SunIcon,
   MoonIcon,
@@ -140,7 +140,7 @@ const NavBar = () => {
           >
             <GithubIcon />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href="https://dribbble.com/Adexifeoluwa"
             target={"_blank"}
             whileHover={{ y: -2 }}
@@ -148,7 +148,7 @@ const NavBar = () => {
             className="w-6 mx-3"
           >
             <DribbleIcon />
-          </motion.a>
+          </motion.a> */}
 
           <motion.a
             href="https://www.reddit.com/user/hepheoluwah/"
@@ -237,7 +237,7 @@ const NavBar = () => {
             >
               <GithubIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="https://dribbble.com/Adexifeoluwa"
               target={"_blank"}
               whileHover={{ y: -2 }}
@@ -245,7 +245,7 @@ const NavBar = () => {
               className="w-6 mx-3 sm:mx-1"
             >
               <DribbleIcon />
-            </motion.a>
+            </motion.a> */}
 
             <motion.a
               href="https://www.reddit.com/user/hepheoluwah/"
