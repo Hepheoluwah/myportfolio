@@ -44,13 +44,7 @@ const Education = () => {
         />
 
         <ul className="w-full flex flex-col items-star justify-between ml-4 xs:ml-2">
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2015-2019"
-            place="Ajayi Crowther Universty"
-            info="Ajayi Crowther University (ACU) is a prestigious Nigerian institution renowned for its academic excellence, moral values, and innovation. I pursued a BSc in Computer Science at ACU, specializing in software development, data science, and cybersecurity. The rigorous curriculum, practical projects, and emphasis on ethical values have prepared me well for my career."
-          />
-
+  
 
 
 <Details
@@ -67,6 +61,14 @@ const Education = () => {
             place="Online Coursework FreeCodeCamp"
             info="Gateway to my career as a software developer. The well-structured curriculum took my coding knowledge from a total beginner level to a very confident level. "
           />
+
+<Details
+            type="Bachelor Of Science In Computer Science"
+            time="2015-2019"
+            place="Ajayi Crowther Universty"
+            info="Ajayi Crowther University (ACU) is a prestigious Nigerian institution renowned for its academic excellence, moral values, and innovation. I pursued a BSc in Computer Science at ACU, specializing in software development, data science, and cybersecurity. The rigorous curriculum, practical projects, and emphasis on ethical values have prepared me well for my career."
+          />
+
 
 
 
