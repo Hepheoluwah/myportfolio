@@ -9,6 +9,9 @@ import { motion } from "framer-motion";
 // import DoggosApi from "../../public/images/projects/doggosApi.jpg";
 import Adoptme from "../../public/images/projects/ADOPT ME LOGO 3.png";
 import Edutrack from "../../public/images/projects/Edutrack.jpg"
+import Burgerstore from "../../public/images/projects/Burgerstore.png"
+import coffeshop from "../../public/images/projects/coffeshop.png"
+import interiordesign from "../../public/images/projects/interiordesign.png"
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
@@ -197,10 +200,58 @@ const projects = () => {
             </div>
 
             
+            
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Interior Design Website."
+                img={interiordesign}
+                summary="Built Animated Interior Design Website using ReactJS + Tailwind CSS + Framer-motion."
+                link="https://interior-tcj.netlify.app/"
+                github="https://github.com/Hepheoluwah/interior-web"
+                type="FeaturedProject"
+                technologies={[
+                  "ReactJS",
+                  "Tailwind CSS",
+                  "Framer-motion"
+                ]}
+              />
+            </div>
+
+
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Coffee shop Website."
+                img={coffeshop}
+                summary="Built a Complete Responsive Coffee shop Website using ReactJS and Tailwind CSS. Animated with Framer motion."
+                link="https://coders-coffee.netlify.app/"
+                github="https://github.com/Hepheoluwah/coffee-cafe"
+                type="FeaturedProject"
+                technologies={[
+                  "ReactJS",
+                  "Tailwind CSS",
+                  "Framer-motion"
+                ]}
+              />
+            </div>
+
 
             
-
-
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Burger Store Landing Page"
+                img={Burgerstore}
+                summary="Lightweight landing page built without any framework, just old school HTML, CSS and Javascript."
+                link="https://quizzical-swartz-cda92c.netlify.app/"
+                github="https://github.com/Hepheoluwah/burgerstore"
+                type="FeaturedProject"
+                technologies={[
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  
+                ]}
+              />
+            </div>
 
 
             <div className="col-span-12 text-center mt-12 text-4xl font-extrabold text-gray-900 dark:text-light tracking-wide">
