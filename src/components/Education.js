@@ -51,22 +51,21 @@ const Education = () => {
             type="Alx SE, Software Engineering Certification"
             time="2023-2024"
             place="Holberton School"
-            info="The ALX | Holberton Software Engineering programme is an immersive programme that engages technology enthusiasts 
-            and budding software engineers in a variety of programmes across in-demand tech disciplines to prepare them for a global career as a Full-Stack Developer."
+            info="As a proud participant in the ALX | Holberton Software Engineering Programme, I experienced an intensive and immersive journey that honed my passion for technology and software engineering. This world-class program equipped me with in-demand skills across cutting-edge disciplines, preparing me for a global career as a Full-Stack Developer with practical expertise and a strong foundation in innovation"
           />
 
 <Details
             type="Responsive Web Design Certification"
             time="2022"
             place="Online Coursework FreeCodeCamp"
-            info="Gateway to my career as a software developer. The well-structured curriculum took my coding knowledge from a total beginner level to a very confident level. "
+            info="Gateway to my journey as a software developer, this well-structured curriculum transformed my coding skills from a complete beginner to a confident and capable developer, ready to tackle real-world challenges. "
           />
 
 <Details
             type="Bachelor Of Science In Computer Science"
             time="2015-2019"
             place="Ajayi Crowther Universty"
-            info="Ajayi Crowther University (ACU) is a prestigious Nigerian institution renowned for its academic excellence, moral values, and innovation. I pursued a BSc in Computer Science at ACU, specializing in software development, data science, and cybersecurity. The rigorous curriculum, practical projects, and emphasis on ethical values have prepared me well for my career."
+            info="Ajayi Crowther University (ACU) played a pivotal role in shaping my journey as a tech professional. I gained specialized knowledge in software development, data science, cybersecurity, artificial intelligence, machine learning, and cloud computing. The university's commitment to academic excellence, innovation, and ethical values, combined with hands-on projects and a rigorous curriculum, provided me with a strong foundation for a successful career in technology, equipping me with the skills to thrive in today's fast-evolving tech landscape."
           />
 
 

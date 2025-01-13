@@ -4,7 +4,7 @@ import Link from "next/link";
 import Layout from "@/components/Layout";
 import HireMe from "@/components/HireMe";
 
-import profilePic from "../../public/images/profile/ifeoluwa3.png"
+import profilePic from "../../public/images/profile/ifeoluwa3.png";
 import profilePic2 from "../../public/images/profile/ifeoluwa1.png";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkIcon } from "../components/Icons";
@@ -28,22 +28,27 @@ export default function Home() {
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w1/2 md:w-full">
               <Image
-                src={profilePic}
+                src="https://framerusercontent.com/images/DGJ4Gx0ogbA7MZuCQVUb98IKt1I.png?scale-down-to=512"
                 alt="ifeoluwa"
-                // add "ml-16" for big screen
-                className="w-full h-autolg:hidden md:inline-block md:w-full  " // Adjust the margin-left to move the image further to the right
+                className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
+                width={512} // Set the width to match the image scale or the desired size
+                height={512} // Set the height, or adjust it proportionally if necessary
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw lg:ml-16"
-                quality={100} // Increase image quality to maximum
+                quality={100}
               />
             </div>
+
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-              As an experienced software engineer fueled by curiosity and innovation, I turn ideas into powerful software applications designed to meet user needs              </p>
+                As an experienced software engineer fueled by curiosity and
+                innovation, I turn ideas into powerful software applications
+                designed to meet user needs{" "}
+              </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   href="/IFEOLUWA  ADEBOLA  ADENIRAN.pdf"

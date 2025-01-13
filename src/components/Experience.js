@@ -54,8 +54,8 @@ const Experience = () => {
             position="Tools Automation Engineer"
             company="Huawei"
             time="2021-2024"
-            address="Remote"
-            work="As a Tools Automation Engineer at Huawei Technologies (2021–2024), My role involved collaborating with cross-functional teams to analyze automation requirements and implement integrated solutions aimed at improving efficiency and reducing operational costs. Also
+            address="Lagos State, Nigeria"
+            work="As a Tools Automation Engineer at Huawei Technologies, My role involved collaborating with cross-functional teams to analyze automation requirements and implement integrated solutions aimed at improving efficiency and reducing operational costs. Also
             Identify opportunities for automation across various departments and processes to drive continuous improvement initiatives."
           />
 

@@ -4,7 +4,7 @@ import Head from "next/head";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 // import profilePic from "../../public/images/profile/github-profile.jpg";
-import profilePic2 from "../../public/images/profile/ifeoluwa1.png";
+import profilePic2 from "../../public/images/profile/Animefyme2.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -93,7 +93,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end jusify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumbers value={20} />+
+                  <AnimatedNumbers value={10} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Satisfied clients

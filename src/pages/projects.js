@@ -203,7 +203,7 @@ const projects = () => {
 
 
 
-            <div className="col-span-12 text-center mt-12 text-4xl font-extrabold text-primary dark:text-light tracking-wide">
+            <div className="col-span-12 text-center mt-12 text-4xl font-extrabold text-gray-900 dark:text-light tracking-wide">
               Stay tuned for more exciting projects coming soon!
             </div>
           </div>

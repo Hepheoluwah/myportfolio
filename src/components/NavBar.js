@@ -7,7 +7,7 @@ import {
   LinkedInIcon,
   GithubIcon,
   // DribbleIcon,
-  RedditIcon,
+  WhatsAppIcon,
   SunIcon,
   MoonIcon,
 } from "./Icons";
@@ -74,8 +74,6 @@ const NavBar = () => {
 
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:p-12 sm:px-8">
-
-
 
       <button
         className="flex-col justify-center items-center hidden lg:flex"
@@ -151,13 +149,14 @@ const NavBar = () => {
           </motion.a> */}
 
           <motion.a
-            href="https://www.reddit.com/user/hepheoluwah/"
+            href="https://api.whatsapp.com/send/?phone=%2B2348144992473&text&type=phone_number&app_absent=0"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 ml-3"
           >
-            <RedditIcon />
+            <WhatsAppIcon />
+
           </motion.a>
 
           <button
@@ -248,13 +247,13 @@ const NavBar = () => {
             </motion.a> */}
 
             <motion.a
-              href="https://www.reddit.com/user/hepheoluwah/"
+              href="https://api.whatsapp.com/send/?phone=%2B2348144992473&text&type=phone_number&app_absent=0"
               target={"_blank"}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 ml-3 sm:mx-1"
             >
-              <RedditIcon />
+              <WhatsAppIcon />
             </motion.a>
 
             <button

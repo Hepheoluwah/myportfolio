@@ -43,7 +43,7 @@ const Skills = () => {
         <Skill name="ReactJS" x="0vw" y="-20vw" />
         <Skill name="Mongo DB" x="15vw" y="15vw" />
         <Skill name="Tailwind CSS" x="-15vw" y="-8vw" />
-        <Skill name="SQLite" x="-20vw" y="-15vw" />
+        <Skill name="SQL" x="-20vw" y="-15vw" />
         <Skill name="Python" x="-29vw" y="-2vw" />
         <Skill name="Postgresql" x="25vw" y="8vw" />
        
