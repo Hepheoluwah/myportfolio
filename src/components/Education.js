@@ -32,7 +32,7 @@ const Education = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
+    <div className="my-28">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         Education
       </h2>
@@ -67,11 +67,6 @@ const Education = () => {
             place="Ajayi Crowther Universty"
             info="Ajayi Crowther University (ACU) played a pivotal role in shaping my journey as a tech professional. I gained specialized knowledge in software development, data science, cybersecurity, artificial intelligence, machine learning, and cloud computing. The university's commitment to academic excellence, innovation, and ethical values, combined with hands-on projects and a rigorous curriculum, provided me with a strong foundation for a successful career in technology, equipping me with the skills to thrive in today's fast-evolving tech landscape."
           />
-
-
-
-
-
         </ul>
       </div>
     </div>

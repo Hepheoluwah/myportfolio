@@ -47,7 +47,7 @@ const about = () => {
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout classsName="pt-16">
+        <Layout classsName="pt-8">
           <AnimatedText
             text="Passion Fuels Purpose!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"

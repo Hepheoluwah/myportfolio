@@ -2,10 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/Layout";
+import Footer from "@/components/Footer";
 import HireMe from "@/components/HireMe";
-
-import profilePic from "../../public/images/profile/ifeoluwa3.png";
-import profilePic2 from "../../public/images/profile/ifeoluwa1.png";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkIcon } from "../components/Icons";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
@@ -32,8 +30,8 @@ export default function Home() {
                 alt="ifeoluwa"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
-                width={512} // Set the width to match the image scale or the desired size
-                height={512} // Set the height, or adjust it proportionally if necessary
+                width={512}
+                height={512}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw lg:ml-16"
                 quality={100}
               />
@@ -47,17 +45,15 @@ export default function Home() {
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 As an experienced software engineer fueled by curiosity and
                 innovation, I turn ideas into powerful software applications
-                designed to meet user needs{" "}
+                designed to meet user needs
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   href="/IFEOLUWA ADENIRAN CV.pdf"
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg 
-                font-semibold hover:bg-light hover:text-dark border border-solid border-transparent 
-                hover:border-dark group dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
-
-                  // download={true}
+                  font-semibold hover:bg-light hover:text-dark border border-solid border-transparent 
+                  hover:border-dark group dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                 >
                   Resume
                   <LinkIcon className="w-6 ml-1 " />
@@ -80,6 +76,9 @@ export default function Home() {
           <Image src={lightBulb} alt="ifeoluwa.dev" className="w-full h-auto" />
         </div>
       </main>
+
+      {/* Footer without links */}
+      {/* <Footer showLinks={false} /> */}
     </>
   );
 }
