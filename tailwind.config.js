@@ -13,6 +13,8 @@ module.exports = {
 
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
+        monolisa: ['Monolisa', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
       },
       colors: {
         dark: "#1b1b1b",

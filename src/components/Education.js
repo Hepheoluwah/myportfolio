@@ -48,17 +48,19 @@ const Education = () => {
 
 
 <Details
-            type="Alx SE, Software Engineering Certification"
+            type="ALX Software Engineering Certification"
             time="2023-2024"
             place="Holberton School"
-            info="As a proud participant in the ALX | Holberton Software Engineering Programme, I experienced an intensive and immersive journey that honed my passion for technology and software engineering. This world-class program equipped me with in-demand skills across cutting-edge disciplines, preparing me for a global career as a Full-Stack Developer with practical expertise and a strong foundation in innovation"
+            info="
+As a proud graduate of the ALX | Holberton Software Engineering Program, I underwent rigorous training in software development, covering key areas like programming, data structures, algorithms, and automation testing. This hands-on program shaped me into a skilled Full-Stack Developer, ready to tackle real-world problems and apply cutting-edge technologies to create scalable solutions. 
+The experience provided me with both technical expertise and problem-solving skills, preparing me for a dynamic career in the fast-evolving tech world."
           />
 
 <Details
             type="Responsive Web Design Certification"
             time="2022"
             place="Online Coursework FreeCodeCamp"
-            info="Gateway to my journey as a software developer, this well-structured curriculum transformed my coding skills from a complete beginner to a confident and capable developer, ready to tackle real-world challenges. "
+            info="Through FreeCodeCamp, I gained a strong foundation in responsive web design, mastering key technologies like HTML, CSS, Flexbox, CSS Grid, media queries, and JavaScript to create mobile-friendly, interactive, and visually appealing websites. This certification marked the beginning of my journey as a software developer, transforming my skills from a complete beginner to a confident, capable developer.  "
           />
 
 <Details

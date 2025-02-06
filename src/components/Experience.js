@@ -55,16 +55,17 @@ const Experience = () => {
             company="Huawei"
             time="2021-2024"
             address="Lagos State, Nigeria"
-            work="As a Tools Automation Engineer at Huawei Technologies, My role involved collaborating with cross-functional teams to analyze automation requirements and implement integrated solutions aimed at improving efficiency and reducing operational costs. Also
-            Identify opportunities for automation across various departments and processes to drive continuous improvement initiatives."
+            work="As a Tools Automation Engineer at Huawei Technologies, I collaborated with cross-functional teams to analyze automation requirements and implement integrated solutions, enhancing operational efficiency and reducing costs. I identified opportunities for automation across various departments and processes, driving continuous improvement initiatives and streamlining workflows to support the company's long-term goals."
           />
 
           <Details
             position="Software Developer"
             company="GGMSS"
-            time="2019-2020"
+            time="2019-2021"
             address="Kogi State, Nigeria."
-            work="I collaborate closely with designers and backend developers to build functional, responsive interfaces. My approach emphasizes clean, efficient, and maintainable code. I implement interactive features to meet project requirements and actively engage in code reviews to uphold best practices, contributing to the overall success of projects"
+            work="
+
+At GGMSS, I developed and optimized responsive web applications using ReactJS, TypeScript, Tailwind CSS, and Redux, following ES6 best practices. I enhanced existing tools by integrating new APIs, improving data retrieval speed. Additionally, I assisted in testing and debugging secure communication protocols, ensuring industry-standard compliance. Through peer code reviews, I helped reduce production errors. I also integrated RESTful APIs, implemented CI/CD pipelines, and collaborated with designers on Figma for seamless design integration."
           />
 
           <Details
@@ -72,7 +73,8 @@ const Experience = () => {
             company="Federal Radio Corporation of Nigeria"
             time="2018"
             address="Oyo state, Nigeria"
-            work="As an IT Operations Intern, I specialize in routine network monitoring, leveraging tools to promptly identify and resolve issues with broadcasting equipment and communication systems. My responsibilities include writing and debugging code for software maintenance, implementing new features, and updating existing software as required. Additionally, I excel in configuring and optimizing network devices, offering technical support to radio station staff and colleagues encountering network or software-related challenges. I actively contribute to the resolution of technical problems and inquiries, ensuring smooth network and software functionality."
+            work="
+As an IT Operations Intern, I focus on network monitoring, quickly identifying and resolving issues with broadcasting equipment and communication systems. I handle software maintenance, write and debug code, and implement new features. Additionally, I optimize network devices and provide technical support to staff, ensuring smooth network and software functionality."
           />
 
         </ul>

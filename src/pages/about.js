@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 // import profilePic from "../../public/images/profile/github-profile.jpg";
 import profilePic2 from "../../public/images/profile/Animefyme2.png";
+// import profilePic2 from "../../public/images/profile/myself3.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -47,7 +48,7 @@ const about = () => {
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout classsName="pt-8">
+        <Layout classsName="pt-16">
           <AnimatedText
             text="Passion Fuels Purpose!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
@@ -55,27 +56,29 @@ const about = () => {
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
-                Biography
+                About Me
               </h2>
               <p className="font-medium">
 
-                  Hi there! I&apos;m Ifeoluwa, a software engineer who genuinely enjoys creating tools that make life easier for people. 
-                  I focus on building web apps and backend systems that aren&apos;t just functional but also intuitive and enjoyable to use. 
-                  For me, it&apos;s about finding simple solutions to complex problems and delivering work that makes an impact.
-
+              Hi, I&apos;m Ifeoluwa, a passionate software engineer dedicated to building innovative and user-friendly solutions 
+              that make a real impact. With expertise in JavaScript, React, Node.js, and MongoDB, I specialize in crafting scalable web and backend applications.
                  
           
               </p>
               <p className="my-4 font-medium">
-              I work mostly with JavaScript, React, Node.js, and MongoDB, and I&apos;m currently diving into cloud computing as I work toward becoming an AWS Cloud Engineer. 
-                  I&apos;m excited about the possibilities cloud technology brings for scalability and efficiency, and I&apos;m eager to bring that into the projects I work on.
-
+              I&apos;m currently expanding my skills in cloud computing as I work toward becoming an AWS Cloud Engineer, 
+              excited by the opportunities cloud technology brings for enhanced scalability, security, and efficiency. Additionally, 
+              I&apos;m exploring how artificial intelligence (AI) can transform industries by solving complex challenges and improving processes.
               </p>
               <p className="font-medium">
-              At the core of it all, I&apos;m someone who values collaboration and continuous learning. 
-                    I&apos;m always open to new challenges and opportunities to grow. 
-                    If you&apos;re looking for someone who&apos;s driven, curious, and ready to contribute, let&apos;s connect 
-                    I&apos;d love to bring my skills and passion to your team!
+              Driven by curiosity and a commitment to continuous learning, I thrive in Agile environments and value collaboration. 
+              My long-term aspiration is to become a Cloud DevOps Engineer, 
+              where I can automate deployments, streamline operations, and enhance teamwork across development and operations.
+              </p>
+
+              <p className="font-medium">
+              If you&apos;re looking for a dedicated engineer ready to contribute and grow with your team, let's connect!
+
               </p>
             </div>
 
