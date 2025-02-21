@@ -6,6 +6,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import HiddenDanceofInternet from "../../public/images/articles/ArticleImage1.png";
 import webperformance from "../../public/images/articles/webperformance.png";
+import AgileTeam from "../../public/images/articles/agileteam.png";
 import cors from "../../public/images/articles/cors.png";
 import git from "../../public/images/articles/git.png";
 import DOM from "../../public/images/articles/DOM.png";
@@ -133,6 +134,7 @@ const articles = () => {
             text="Words Can Change The World! "
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
+          
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               title="The Hidden Dance of the Internet: How You Get to Google with a Simple Click🤳🏾"
@@ -153,8 +155,14 @@ const articles = () => {
             All Articles
           </h2>
           <ul>
+          <Article
+              title="Meet the Agile Squad: Understanding Key Roles in Software Development"
+              date="February 21st, 2025"
+              link="https://medium.com/@deniranifeoluwa/meet-the-agile-squad-understanding-key-roles-in-software-development-957a58ae9bad"
+              img={AgileTeam}
+            />
             <Article
-              title="The Hidden Dance of the Internet: How You Get to Google with a Simple Click🤳🏾"
+              title="The Hidden Dance of the Internet: How You Get to Google with a Simple Click"
               date="January 3rd, 2024"
               link="https://www.linkedin.com/pulse/hidden-dance-internet-how-you-get-google-simple-click-adeniran-oqqzf/?trackingId=3P%2BnnldSQ0O6t3e49Aptyg%3D%3D"
               img={HiddenDanceofInternet}

@@ -60,24 +60,20 @@ const about = () => {
               </h2>
               <p className="font-medium">
 
-              Hi, I&apos;m Ifeoluwa, a passionate software engineer dedicated to building innovative and user-friendly solutions 
-              that make a real impact. With expertise in JavaScript, React, Node.js, and MongoDB, I specialize in crafting scalable web and backend applications.
+              Hi, I&apos;m Ifeoluwa, a passionate software engineer dedicated to building innovative and user-friendly solutions that make a real impact. With expertise in modern web technologies, I specialize in crafting scalable and efficient applications
                  
           
               </p>
               <p className="my-4 font-medium">
-              I&apos;m currently expanding my skills in cloud computing as I work toward becoming an AWS Cloud Engineer, 
-              excited by the opportunities cloud technology brings for enhanced scalability, security, and efficiency. Additionally, 
-              I&apos;m exploring how artificial intelligence (AI) can transform industries by solving complex challenges and improving processes.
+              I&apos;m expanding my expertise in cloud computing and AI, leveraging automation to enhance scalability, security, and efficiency. As I evolve into a Cloud DevOps Engineer, I&apos;m focused on streamlining operations, optimizing deployments, and bridging the gap between development and IT
+
+
               </p>
-              <p className="font-medium">
-              Driven by curiosity and a commitment to continuous learning, I thrive in Agile environments and value collaboration. 
-              My long-term aspiration is to become a Cloud DevOps Engineer, 
-              where I can automate deployments, streamline operations, and enhance teamwork across development and operations.
-              </p>
+           
 
               <p className="font-medium">
-              If you&apos;re looking for a dedicated engineer ready to contribute and grow with your team, let's connect!
+              If you&apos;re looking for a dedicated engineer ready to grow with your team, let&apos;s connect!
+
 
               </p>
             </div>

@@ -1,9 +1,44 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
+import { createPortal } from "react-dom";
 import LiIcon from "./LiIcon";
+// import AlxCert from "../../public/images/certs/alxcert.png"
+// import FreeCodeCamp from "../../public/images/certs/freecodecamp.png"
+const AlxCert = "/images/certs/alxcert.png";
+const FreeCodeCamp = "/images/certs/freecodecamp.png";
 
-const Details = ({ type, time, place, info }) => {
+import AitextProcessor from "../../public/images/projects/aitextprocessor.png";
+// Modal component rendered via a portal.
+const Modal = ({ isOpen, onClose, children }) => {
+  if (!isOpen) return null;
+  return createPortal(
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.3 }}
+        className="bg-white dark:bg-dark p-6 rounded-lg relative w-11/12 max-w-3xl"
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 text-xl font-bold text-gray-700 dark:text-gray-300"
+        >
+          &times;
+        </button>
+        {children}
+      </motion.div>
+    </div>,
+    document.body
+  );
+};
+
+const Details = ({ type, time, place, info, certLink }) => {
   const ref = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <li
       ref={ref}
@@ -15,11 +50,30 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitlize font-bold text-2xl sm:text-xl xs:text-lg">{type}&nbsp;</h3>
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+          {type}&nbsp;
+        </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {place}
         </span>
         <p className="font-medium w-full md:text-sm">{info}</p>
+        {certLink && (
+          <>
+            <button
+              onClick={openModal}
+              className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+            >
+              View Certificate
+            </button>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+              <img
+                src={certLink}
+                alt="Certificate"
+                className="w-full h-auto max-h-[500px] object-contain"
+              />
+            </Modal>
+          </>
+        )}
       </motion.div>
     </li>
   );
@@ -43,31 +97,28 @@ const Education = () => {
           className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
 
-        <ul className="w-full flex flex-col items-star justify-between ml-4 xs:ml-2">
-  
-
-
-<Details
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          <Details
             type="ALX Software Engineering Certification"
             time="2023-2024"
             place="Holberton School"
-            info="
-As a proud graduate of the ALX | Holberton Software Engineering Program, I underwent rigorous training in software development, covering key areas like programming, data structures, algorithms, and automation testing. This hands-on program shaped me into a skilled Full-Stack Developer, ready to tackle real-world problems and apply cutting-edge technologies to create scalable solutions. 
-The experience provided me with both technical expertise and problem-solving skills, preparing me for a dynamic career in the fast-evolving tech world."
+            info="Gained hands-on training in programming, data structures, algorithms, and automation testing. Now equipped to solve real-world problems as a Full-Stack Developer."
+            certLink={AlxCert}
           />
 
-<Details
+          <Details
             type="Responsive Web Design Certification"
             time="2022"
-            place="Online Coursework FreeCodeCamp"
-            info="Through FreeCodeCamp, I gained a strong foundation in responsive web design, mastering key technologies like HTML, CSS, Flexbox, CSS Grid, media queries, and JavaScript to create mobile-friendly, interactive, and visually appealing websites. This certification marked the beginning of my journey as a software developer, transforming my skills from a complete beginner to a confident, capable developer.  "
+            place="FreeCodeCamp"
+            info="Built a strong foundation in HTML, CSS, JavaScript, and responsive design. Kickstarted my journey as a developer."
+            certLink={FreeCodeCamp}
           />
 
-<Details
+          <Details
             type="Bachelor Of Science In Computer Science"
             time="2015-2019"
-            place="Ajayi Crowther Universty"
-            info="Ajayi Crowther University (ACU) played a pivotal role in shaping my journey as a tech professional. I gained specialized knowledge in software development, data science, cybersecurity, artificial intelligence, machine learning, and cloud computing. The university's commitment to academic excellence, innovation, and ethical values, combined with hands-on projects and a rigorous curriculum, provided me with a strong foundation for a successful career in technology, equipping me with the skills to thrive in today's fast-evolving tech landscape."
+            place="Ajayi Crowther University"
+            info="Ajayi Crowther University played a pivotal role in shaping my journey as a tech professional. I gained specialized knowledge in software development, data science, cybersecurity, artificial intelligence, machine learning, and cloud computing. The university's commitment to academic excellence, innovation, and ethical values, combined with hands-on projects and a rigorous curriculum, provided me with a strong foundation for a successful career in technology."
           />
         </ul>
       </div>

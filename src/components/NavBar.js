@@ -111,21 +111,13 @@ const NavBar = () => {
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
-          <motion.a
-            href="https://twitter.com/Adexifeouwa"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mr-3"
-          >
-            <TwitterIcon />
-          </motion.a>
+  
           <motion.a
             href="https://linkedin.com/in/ifeoluwa-adeniran-09183a1ba"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3"
+            className="w-6 mr-3"
           >
             <LinkedInIcon />
           </motion.a>
@@ -153,10 +145,19 @@ const NavBar = () => {
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            className="w-6 ml-3"
+            className="w-6 mx-3"
           >
             <WhatsAppIcon />
 
+          </motion.a>
+          <motion.a
+            href="https://x.com/0x_ifeoluwa"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 ml-3"
+          >
+            <TwitterIcon />
           </motion.a>
 
           <button

@@ -14,7 +14,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, technologies}) => {
   return (
     <article
       className="w-full flex items-center justify-between relative rounded-br-2xl
@@ -65,13 +65,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           >
             Visit Project{" "}
           </Link>
+          <strong>Technologies Used:</strong> {technologies.join(", ")}
         </div>
       </div>
     </article>
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, link, github, technologies }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center rounded-2xl
@@ -118,6 +119,7 @@ const Project = ({ title, type, img, link, github }) => {
           <Link href={github} target="_blank" className="w-8 md:w-6">
             {" "}
             <GithubIcon />{" "}
+            <strong>Technologies Used:</strong> {technologies.join(", ")}
           </Link>
         </div>
       </div>
@@ -143,18 +145,30 @@ const projectsbackup = () => {
             text="Imagination Trumps Knowledge!"
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
-
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Adopt Me!"
-                img={Adoptme}
-                summary="The Adopt Me project is designed to facilitate pet adoption by providing a user-friendly interface for browsing and adopting pets. It aims to connect potential pet owners with animals available for adoption from various shelters or organizations."
-                link="https://adopt-me-byifeoluwa.vercel.app/"
-                github="https://github.com/Hepheoluwah/Adopt_me"
+                title="EduTrack!"
+                img={Edutrack}
+                summary="EduTrack is a comprehensive school management system designed to streamline class organization, student and faculty management, and administrative tasks. It enables seamless attendance tracking, performance assessment, and feedback delivery. With easy access to records, marks, and communication tools, EduTrack simplifies educational management for administrators, teachers, and students."
+                link="https://edutrackconnect.netlify.app"
+                github="https://github.com/Hepheoluwah/EduTrack"
                 type="FeaturedProject"
+                technologies={[
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "ReactJS",
+                  "Tailwind CSS",
+                  "API Integration",
+                  "Netlify"
+                ]}
               />
             </div>
+
+
+
+
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Wordy Master"
@@ -175,16 +189,26 @@ const projectsbackup = () => {
               />
             </div>
 
-            <div className="col-span-12">
-              <FeaturedProject
-                title="Doggos API"
-                img={DoggosApi}
-                summary="Doggos API is a project that alows you view any dog breed and readup about the dog"
-                link="https://dogexplore.netlify.app/"
-                github="https://github.com/"
-                type="FeaturedProject"
-              />
-            </div>
+           <div className="col-span-12">
+                      <FeaturedProject
+                        title="Adopt Me!"
+                        img={Adoptme}
+                        summary="The Adopt Me project is designed to facilitate pet adoption by providing a user-friendly interface for browsing and adopting pets. It aims to connect potential pet owners with animals available for adoption from various shelters or organizations."
+                        link="https://adopt-me-byifeoluwa.vercel.app/"
+                        github="https://github.com/Hepheoluwah/Adopt_me"
+                        type="FeaturedProject"
+                        technologies={[
+                          "HTML",
+                          "CSS",
+                          "JavaScript",
+                          "ReactJS",
+                          "Tailwind CSS",
+                          "API Integration",
+                          "Vercel"
+                        ]}
+                      />
+                    </div>
+                    
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
