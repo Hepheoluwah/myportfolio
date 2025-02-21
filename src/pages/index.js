@@ -16,7 +16,7 @@ export default function Home() {
         <title>Ifeoluwa Adeniran | Home</title>
         <meta
           name="description"
-          content="Welcome to Ifeoluwa's personal website showcasing expertise in full-stack development, software engineering, and innovative web solutions. Explore projects, read insightful articles, and connect with a passionate developer dedicated to delivering exceptional results."
+          content="Welcome to Ifeoluwa's personal website showcasing expertise in full-stack development, software engineering, and innovative web solutions. Explore projects, read insightful articles, and connect with a passionate developer dedicated to delivering exceptional results..."
         />
       </Head>
 
@@ -77,8 +77,6 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer without links */}
-      {/* <Footer showLinks={false} /> */}
     </>
   );
 }
