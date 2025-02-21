@@ -13,8 +13,8 @@ import Coffeshop from "../../public/images/projects/coffeshop.png";
 import interiordesign from "../../public/images/projects/interiordesign.png";
 import TransitionEffect from "@/components/TransitionEffect";
 import Ticz from "../../public/images/projects/ticz.png";
-import ColorQuest from "../../public/images/projects/colorQuest.png";
-import ProfileCard from "../../public/images/projects/profileCard.png";
+import ColorQuest from "../../public/images/projects/colorquest.png";
+import ProfileCard from "../../public/images/projects/profilecard.png";
 import AitextProcessor from "../../public/images/projects/aitextprocessor.png";
 
 
