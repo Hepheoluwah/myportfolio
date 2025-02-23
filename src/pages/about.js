@@ -1,20 +1,32 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-// import profilePic from "../../public/images/profile/github-profile.jpg";
 import profilePic2 from "../../public/images/profile/Animefyme2.png";
-// import profilePic2 from "../../public/images/profile/myself3.png";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
+import { useInView, useMotionValue, useSpring, motion } from "framer-motion";
+import { BiMouse } from "react-icons/bi";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
 
+// Custom hook to detect mobile devices
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+  
+  return isMobile;
+};
+
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
-
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
   const isInView = useInView(ref, { once: true });
@@ -33,10 +45,51 @@ const AnimatedNumbers = ({ value }) => {
     });
   }, [springValue, value]);
 
-  return <span ref={ref}> </span>;
+  return <span ref={ref}></span>;
 };
 
-const about = () => {
+const ScrollDownIndicator = () => {
+  return (
+    <div className="fixed bottom-5 right-5 flex flex-col items-center z-50">
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 1.5, repeat: Infinity }}
+      >
+        <BiMouse size={30} className="text-dark dark:text-light" />
+      </motion.div>
+      <p className="mt-2 text-sm text-dark dark:text-light">Scroll Down</p>
+    </div>
+  );
+};
+
+const About = () => {
+  const isMobile = useIsMobile();
+  const [showIndicator, setShowIndicator] = useState(true);
+
+  useEffect(() => {
+    // If mobile, don't show the scroll indicator.
+    if (isMobile) {
+      setShowIndicator(false);
+      return;
+    }
+    
+    const handleScroll = () => {
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const threshold = document.body.offsetHeight - 50; // Adjust threshold as needed
+      if (scrollPosition >= threshold) {
+        setShowIndicator(false);
+      } else {
+        setShowIndicator(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // Call once on mount to set the initial state
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isMobile]);
+
   return (
     <>
       <Head>
@@ -48,36 +101,13 @@ const about = () => {
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout classsName="pt-16">
+        <Layout className="pt-16">
           <AnimatedText
             text="Passion Fuels Purpose!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
-                About Me
-              </h2>
-              <p className="font-medium">
-
-              Hi, I&apos;m Ifeoluwa, a passionate software engineer dedicated to building innovative and user-friendly solutions that make a real impact. With expertise in modern web technologies, I specialize in crafting scalable and efficient applications
-                 
-          
-              </p>
-              <p className="my-4 font-medium">
-              I&apos;m expanding my expertise in cloud computing and AI, leveraging automation to enhance scalability, security, and efficiency. As I evolve into a Cloud DevOps Engineer, I&apos;m focused on streamlining operations, optimizing deployments, and bridging the gap between development and IT
-
-
-              </p>
-           
-
-              <p className="font-medium">
-              If you&apos;re looking for a dedicated engineer ready to grow with your team, let&apos;s connect!
-
-
-              </p>
-            </div>
-
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 items-center">
+            {/* Profile Image */}
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
@@ -89,31 +119,56 @@ const about = () => {
                 quality={100}
               />
             </div>
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
-              <div className="flex flex-col items-end jusify-center xl:items-center">
+            {/* About Text */}
+            <div className="col-span-3 flex flex-col justify-center xl:col-span-4 md:order-2 md:col-span-8 space-y-4">
+              <h2 className="mb-4 text-xl font-bold uppercase text-dark dark:text-light">
+                About Me
+              </h2>
+              <p className="font-medium">
+                Hi, I'm Ifeoluwa 👋, a passionate software engineer dedicated to
+                transforming bold ideas into innovative digital experiences. I
+                use modern web technologies to build efficient and impactful
+                solutions.
+              </p>
+              <p className="font-medium">
+                I'm also exploring cloud computing and AI to enhance automation,
+                scalability, and security—always looking for smarter ways to
+                optimize systems.
+              </p>
+              <p className="font-medium">
+                Ready to turn visionary ideas into reality?{" "}
+                <a
+                  href="mailto:your-email@example.com"
+                  className="text-blue-500 hover:underline"
+                >
+                  Let’s connect!
+                </a>
+              </p>
+            </div>
+            {/* Stats Section */}
+            <div className="col-span-2 flex flex-col justify-between items-center xl:col-span-8 xl:flex-row md:order-3 md:col-span-8 space-y-0 xl:space-y-2">
+              <div className="flex flex-col items-center justify-center space-y-2">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={10} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  Satisfied clients
+                <h2 className="text-xl font-medium capitalize text-dark dark:text-light text-center">
+                  Satisfied Clients
                 </h2>
               </div>
-
-              <div className="flex flex-col items-end jusify-center xl:items-center ">
+              <div className="flex flex-col items-center justify-center space-y-2">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={10} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  Projects completed
+                <h2 className="text-xl font-medium capitalize text-dark dark:text-light text-center">
+                  Projects Completed
                 </h2>
               </div>
-
-              <div className="flex flex-col items-end jusify-center xl:items-center">
+              <div className="flex flex-col items-center justify-center space-y-2">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={4} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                  Years of experience
+                <h2 className="text-xl font-medium capitalize text-dark dark:text-light text-center">
+                  Years of Experience
                 </h2>
               </div>
             </div>
@@ -122,9 +177,11 @@ const about = () => {
           <Experience />
           <Education />
         </Layout>
+        {/* Only render ScrollDownIndicator on non-mobile devices */}
+        {!isMobile && showIndicator && <ScrollDownIndicator />}
       </main>
     </>
   );
 };
 
-export default about;
+export default About;

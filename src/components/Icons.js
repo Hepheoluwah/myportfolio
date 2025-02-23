@@ -621,4 +621,315 @@ export const SunIcon = ({ className, ...rest }) => (
       />
     </circle>
   </svg>
+
+  
 );
+
+// HTML Icon
+export const HtmlIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 128 128"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <path fill="#E44D26" d="M19 0l9 101 46 13 46-13 9-101H19z" />
+    <path fill="#F16529" d="M64 117l36-10 7-79H64z" />
+    <path fill="#EBEBEB" d="M64 53H35l-2-23h31V7h-51l3 33h18v13z" />
+    <path fill="#FFF" d="M64 53v-13h20l-2 13H64z" />
+  </svg>
+);
+
+// CSS Icon
+export const CssIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 128 128"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <path fill="#1572B6" d="M19 0l9 101 46 13 46-13 9-101H19z" />
+    <path fill="#33A9DC" d="M64 117l36-10 7-79H64z" />
+    <path fill="#FFF" d="M64 53H35l-2-23h31V7h-51l3 33h18v13z" />
+    <path fill="#EBEBEB" d="M64 53v-13h20l-2 13H64z" />
+  </svg>
+);
+
+// JavaScript Icon
+export const JavaScriptIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <rect width="128" height="128" fill="#F7DF1E" />
+    <text
+      x="64"
+      y="88"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="48"
+      fill="#000"
+    >
+      JS
+    </text>
+  </svg>
+);
+
+// NodeJS Icon
+export const NodeJSIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <rect width="128" height="128" fill="#68A063" />
+    <text
+      x="64"
+      y="80"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="24"
+      fill="#FFF"
+    >
+      Node
+    </text>
+  </svg>
+);
+
+// NextJS Icon
+export const NextJSIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <rect width="128" height="128" fill="#000" />
+    <text
+      x="64"
+      y="80"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="24"
+      fill="#FFF"
+    >
+      Next
+    </text>
+  </svg>
+);
+
+// Bootstrap Icon
+export const BootstrapIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <rect width="128" height="128" fill="#563D7C" />
+    <text
+      x="64"
+      y="80"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="24"
+      fill="#FFF"
+    >
+      BS
+    </text>
+  </svg>
+);
+
+// ReactJS Icon
+export const ReactIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <circle cx="64" cy="64" r="60" fill="none" stroke="#61DAFB" strokeWidth="8" />
+    <text
+      x="64"
+      y="80"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="18"
+      fill="#61DAFB"
+    >
+      React
+    </text>
+  </svg>
+);
+
+// MongoDB Icon
+export const MongoDBIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <path
+      fill="#589636"
+      d="M64 0C40 0 24 16 24 16s-8 20 0 20c8 0 8-4 16-4 8 0 8 4 16 4s0-20 0-20S88 0 64 0z"
+    />
+    <text
+      x="64"
+      y="80"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="18"
+      fill="#FFF"
+    >
+      Mongo
+    </text>
+  </svg>
+);
+
+// Tailwind Icon
+export const TailwindIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <path
+      fill="#06B6D4"
+      d="M64 0c-22 0-32 16-32 16s10 16 32 16 32-16 32-16-10-16-32-16zM32 48s10 16 32 16 32-16 32-16-10-16-32-16-32 16-32 16zM0 96s10 16 32 16 32-16 32-16-10-16-32-16-32 16-32 16z"
+    />
+    <text
+      x="64"
+      y="120"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="18"
+      fill="#FFF"
+    >
+      TW
+    </text>
+  </svg>
+);
+
+// SQL Icon
+export const SqlIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <rect width="128" height="128" fill="#00758F" />
+    <text
+      x="64"
+      y="80"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="24"
+      fill="#FFF"
+    >
+      SQL
+    </text>
+  </svg>
+);
+
+// Python Icon
+export const PythonIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <path fill="#306998" d="M64 0C40 0 24 16 24 16v32h40V0z" />
+    <path fill="#FFD43B" d="M64 128c24 0 40-16 40-16v-32H64v48z" />
+    <text
+      x="64"
+      y="80"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="18"
+      fill="#FFF"
+    >
+      Py
+    </text>
+  </svg>
+);
+
+// API Integration Icon
+export const ApiIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <circle cx="64" cy="64" r="60" fill="#4F46E5" />
+    <text
+      x="64"
+      y="80"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="18"
+      fill="#FFF"
+    >
+      API
+    </text>
+  </svg>
+);
+
+// Web Design Icon
+export const WebDesignIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 128 128"
+    width="1em"
+    height="1em"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <path
+      fill="#000"
+      d="M10 118l108-108c4-4 4-10 0-14L104 0c-4-4-10-4-14 0L0 90c-4 4-4 10 0 14l16 16c4 4 10 4 14 0z"
+    />
+    <text
+      x="64"
+      y="100"
+      textAnchor="middle"
+      fontFamily="Arial, sans-serif"
+      fontSize="18"
+      fill="#FFF"
+    >
+      WD
+    </text>
+  </svg>
+);
+
