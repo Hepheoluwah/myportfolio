@@ -119,7 +119,7 @@ const Education = () => {
             type="Bachelor Of Science In Computer Science"
             time="2015-2019"
             place="Ajayi Crowther University"
-            info="Ajayi Crowther University played a pivotal role in shaping my journey as a tech professional. I gained specialized knowledge in software development, data science, cybersecurity, artificial intelligence, machine learning, and cloud computing. The university's commitment to academic excellence, innovation, and ethical values, combined with hands-on projects and a rigorous curriculum, provided me with a strong foundation for a successful career in technology."
+            info="Ajayi Crowther University played a pivotal role in shaping my journey as a tech professional. I gained specialized knowledge in software development, data science, cybersecurity, artificial intelligence, machine learning, and cloud computing. The university&apos;s commitment to academic excellence, innovation, and ethical values, combined with hands-on projects and a rigorous curriculum, provided me with a strong foundation for a successful career in technology."
           />
         </ul>
       </div>

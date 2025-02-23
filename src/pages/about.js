@@ -96,7 +96,7 @@ const About = () => {
         <title>Ifeoluwa | About Page</title>
         <meta
           name="description"
-          content="Discover Ifeoluwa's expertise in full-stack development, software engineering, and web application design. Learn more about their journey, skills, and projects. Connect with a passionate developer focused on innovative solutions."
+          content="Discover Ifeoluwa&apos;s expertise in full-stack development, software engineering, and web application design. Learn more about their journey, skills, and projects. Connect with a passionate developer focused on innovative solutions."
         />
       </Head>
       <TransitionEffect />
@@ -125,13 +125,13 @@ const About = () => {
                 About Me
               </h2>
               <p className="font-medium">
-                Hi, I'm Ifeoluwa 👋, a passionate software engineer dedicated to
+                Hi, I&apos;m Ifeoluwa 👋, a passionate software engineer dedicated to
                 transforming bold ideas into innovative digital experiences. I
                 use modern web technologies to build efficient and impactful
                 solutions.
               </p>
               <p className="font-medium">
-                I'm also exploring cloud computing and AI to enhance automation,
+                I&apos;m also exploring cloud computing and AI to enhance automation,
                 scalability, and security—always looking for smarter ways to
                 optimize systems.
               </p>
