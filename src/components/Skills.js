@@ -21,7 +21,13 @@ import {
 
 // Custom hook to detect mobile devices
 const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  // Use lazy initialization to ensure window is available
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 768;
+    }
+    return false;
+  });
 
   useEffect(() => {
     const handleResize = () => {
