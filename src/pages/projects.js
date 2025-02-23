@@ -298,7 +298,7 @@ const Projects = () => {
       link: "https://ifeoluwa-dev.vercel.app/",
       github: "https://github.com/Hepheoluwah/myportfolio",
       type: "Front-end",
-      technologies: ["JavaScript", "React", "Tailwind CSS", "Framer-motion", "Vercel"],
+      technologies: ["JavaScript", "React", "NextJS", "Tailwind CSS", "Framer-motion", "Vercel"],
       difficulty: "Intermediate",
     },
   ];

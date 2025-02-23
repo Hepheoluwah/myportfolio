@@ -14,14 +14,14 @@ import TransitionEffect from "@/components/TransitionEffect";
 // Custom hook to detect mobile devices
 const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(false);
-  
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
     checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
-  
+
   return isMobile;
 };
 
@@ -67,12 +67,11 @@ const About = () => {
   const [showIndicator, setShowIndicator] = useState(true);
 
   useEffect(() => {
-    // If mobile, don't show the scroll indicator.
     if (isMobile) {
       setShowIndicator(false);
       return;
     }
-    
+
     const handleScroll = () => {
       const scrollPosition = window.innerHeight + window.scrollY;
       const threshold = document.body.offsetHeight - 50; // Adjust threshold as needed
@@ -96,7 +95,7 @@ const About = () => {
         <title>Ifeoluwa | About Page</title>
         <meta
           name="description"
-          content="Discover Ifeoluwa&apos;s expertise in full-stack development, software engineering, and web application design. Learn more about their journey, skills, and projects. Connect with a passionate developer focused on innovative solutions."
+          content="Discover Ifeoluwa's expertise in full-stack development, software engineering, and web application design. Learn more about their journey, skills, and projects. Connect with a passionate developer focused on innovative solutions."
         />
       </Head>
       <TransitionEffect />
@@ -125,15 +124,15 @@ const About = () => {
                 About Me
               </h2>
               <p className="font-medium">
-                Hi, I&apos;m Ifeoluwa 👋, a passionate software engineer dedicated to
-                transforming bold ideas into innovative digital experiences. I
-                use modern web technologies to build efficient and impactful
-                solutions.
+                Hi, I&apos;m Ifeoluwa 👋, a passionate software engineer
+                dedicated to transforming bold ideas into innovative digital
+                experiences. I use modern web technologies to build efficient
+                and impactful solutions.
               </p>
               <p className="font-medium">
-                I&apos;m also exploring cloud computing and AI to enhance automation,
-                scalability, and security—always looking for smarter ways to
-                optimize systems.
+                I&apos;m also exploring cloud computing and AI to enhance
+                automation, scalability, and security—always looking for smarter
+                ways to optimize systems.
               </p>
               <p className="font-medium">
                 Ready to turn visionary ideas into reality?{" "}
@@ -146,8 +145,8 @@ const About = () => {
               </p>
             </div>
             {/* Stats Section */}
-            <div className="col-span-2 flex flex-col justify-between items-center xl:col-span-8 xl:flex-row md:order-3 md:col-span-8 space-y-0 xl:space-y-2">
-              <div className="flex flex-col items-center justify-center space-y-2">
+            <div className="col-span-2 flex flex-col gap-2 justify-between items-center xl:col-span-8 xl:flex-row md:order-3 md:col-span-8">
+            <div className="flex flex-col items-center justify-center space-y-2">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={10} />+
                 </span>

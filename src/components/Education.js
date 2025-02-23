@@ -2,12 +2,14 @@ import React, { useState, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import { createPortal } from "react-dom";
 import LiIcon from "./LiIcon";
+import Image from "next/image"; // Import next/image for optimization
 // import AlxCert from "../../public/images/certs/alxcert.png"
 // import FreeCodeCamp from "../../public/images/certs/freecodecamp.png"
 const AlxCert = "/images/certs/alxcert.png";
 const FreeCodeCamp = "/images/certs/freecodecamp.png";
 
 import AitextProcessor from "../../public/images/projects/aitextprocessor.png";
+
 // Modal component rendered via a portal.
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
@@ -67,11 +69,15 @@ const Details = ({ type, time, place, info, certLink }) => {
             </button>
 
             <Modal isOpen={isModalOpen} onClose={closeModal}>
-              <img
-                src={certLink}
-                alt="Certificate"
-                className="w-full h-auto max-h-[500px] object-contain"
-              />
+              {/* Wrap Image in a relative container with a fixed height */}
+              <div className="relative w-full h-[500px]">
+                <Image
+                  src={certLink}
+                  alt="Certificate"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </Modal>
           </>
         )}
