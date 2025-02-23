@@ -166,8 +166,8 @@ const Projects = () => {
         "HTML",
         "CSS",
         "JavaScript",
-        "ReactJS",
-        "Tailwind CSS",
+        "React",
+        "Tailwind",
         "API Integration",
         "MongoDB Integration",
         "Netlify",
@@ -188,8 +188,8 @@ const Projects = () => {
         "HTML",
         "CSS",
         "JavaScript",
-        "ReactJS",
-        "Tailwind CSS",
+        "React",
+        "Tailwind",
         "API Integration",
         "Vercel",
       ],
@@ -205,7 +205,7 @@ const Projects = () => {
       github:
         "https://github.com/Hepheoluwah/HNG/tree/main/conference-ticket-generator",
       type: "Front-end",
-      technologies: ["HTML", "CSS", "JavaScript", "REACT", "Tailwind"],
+      technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind"],
       difficulty: "Intermediate",
     },
     {
@@ -230,7 +230,7 @@ const Projects = () => {
       link: "https://interior-tcj.netlify.app/",
       github: "https://github.com/Hepheoluwah/interior-web",
       type: "Front-end",
-      technologies: ["ReactJS", "Tailwind CSS", "Framer-motion", "Netlify"],
+      technologies: ["React", "Tailwind", "Framer-motion", "Netlify"],
       difficulty: "Intermediate",
     },
     {
@@ -244,7 +244,7 @@ const Projects = () => {
       type: "Front-end",
       technologies: [
         "JavaScript",
-        "REACT",
+        "React",
         "Tailwind",
         "API Integration",
         "Chrome API",
@@ -274,7 +274,7 @@ const Projects = () => {
       link: "https://coders-coffee.netlify.app/",
       github: "https://github.com/Hepheoluwah/coffee-cafe",
       type: "Front-end",
-      technologies: ["ReactJS", "Tailwind CSS", "Framer-motion", "Netlify"],
+      technologies: ["React", "Tailwind", "Framer-motion", "Netlify"],
       difficulty: "Beginner",
     },
     {
@@ -298,7 +298,7 @@ const Projects = () => {
       link: "https://ifeoluwa-dev.vercel.app/",
       github: "https://github.com/Hepheoluwah/myportfolio",
       type: "Front-end",
-      technologies: ["JavaScript", "React", "NextJS", "Tailwind CSS", "Framer-motion", "Vercel"],
+      technologies: ["NextJS", "Tailwind", "Framer-motion", "Vercel"],
       difficulty: "Intermediate",
     },
   ];
