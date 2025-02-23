@@ -1,5 +1,5 @@
 
-![image](https://github.com/user-attachments/assets/8a133471-4bab-4ef4-a309-bcb832f53d89)
+![My Website](image-1.png)
 
 # Personal Portfolio
 
@@ -23,7 +23,6 @@ This portfolio website provides a centralized place for showcasing my work. Itâ€
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/) / CSS Modules
-- **Forms**: Formspree / Netlify Forms (for contact forms)
 - **Hosting**: [Vercel](https://vercel.com/) for easy deployment and hosting
 - **Icons**: Heroicons / Font Awesome
 
@@ -44,8 +43,6 @@ Feel free to reach out if youâ€™re interested in working together or have any qu
 
 - **Email**: deniranifeoluwa@gmail.com
 - **LinkedIn**: [linkedin.com/in/ifeoluwa-adeniran-09183a1ba](https://www.linkedin.com/in/ifeoluwa-adeniran-09183a1ba)
-- **Twitter**: [x.com/Adexifeouwa](https://x.com/Adexifeouwa)
+- **Twitter**: [x.com/Adexifeouwa](https://x.com/0x_ifeoluwa)
 
---- 
 
-This structure provides a clear, professional overview of your portfolio project for GitHub.
