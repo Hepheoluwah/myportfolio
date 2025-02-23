@@ -262,7 +262,7 @@ const Projects = () => {
       github:
         "https://github.com/Hepheoluwah/HNG/tree/main/Profile%20Card",
       type: "Front-end",
-      technologies: ["HTML", "CSS", "JavaScript", "Vercel",],
+      technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
       difficulty: "Beginner",
     },
     {
@@ -410,13 +410,31 @@ const Projects = () => {
               </select>
             </div>
 
-            {/* Tag Cloud for Technologies */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-4 sm:gap-2">
+  {uniqueTechnologies.map((tech) => (
+    <span
+      key={tech}
+      onClick={() =>
+        setTechnologyFilter(technologyFilter === tech ? "" : tech)
+      }
+      className={`cursor-pointer px-3 py-1 sm:px-4 sm:py-2 rounded-full text-sm transition-colors duration-300 ${
+        technologyFilter === tech
+          ? "bg-blue-500 text-white"
+          : "bg-gray-200 text-gray-800 hover:bg-blue-500 hover:text-white"
+      }`}
+    >
+      {tech}
+    </span>
+  ))}
+</div>
+
+            {/* Tag Cloud for Technologies
+            <div className="flex flex-wrap gap-4 sm:gap-2">
               {uniqueTechnologies.map((tech) => (
                 <span
                   key={tech}
                   onClick={() => setTechnologyFilter(tech)}
-                  className={`cursor-pointer px-3 py-1 rounded-full text-sm transition-colors duration-300 ${
+                  className={`cursor-pointer px-3 py-1 sm:px-4 sm:py-2 rounded-full text-sm transition-colors duration-300 ${
                     technologyFilter === tech
                       ? "bg-blue-500 text-white"
                       : "bg-gray-200 text-gray-800 hover:bg-blue-500 hover:text-white"
@@ -425,7 +443,7 @@ const Projects = () => {
                   {tech}
                 </span>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Projects Grid */}
