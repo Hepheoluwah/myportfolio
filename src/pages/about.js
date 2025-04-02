@@ -126,16 +126,16 @@ const About = () => {
               <p className="font-medium">
                 Hi, I&apos;m Ifeoluwa 👋, a passionate software engineer
                 dedicated to transforming bold ideas into innovative digital
-                experiences. I use modern web technologies to build efficient
+                solutions. I use modern web technologies to build efficient
                 and impactful solutions.
               </p>
               <p className="font-medium">
-                I&apos;m also exploring cloud computing and AI to enhance
-                automation, scalability, and security—always looking for smarter
+                I&apos;m also exploring cloud computing and AI to improve
+                automation, scalability, and security. I&apos;m always looking for smarter
                 ways to optimize systems.
               </p>
               <p className="font-medium">
-                Ready to turn visionary ideas into reality?{" "}
+                Got an idea you want to bring to life?{" "}
                 <a
                   href="mailto:your-email@example.com"
                   className="text-blue-500 hover:underline"

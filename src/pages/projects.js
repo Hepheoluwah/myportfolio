@@ -69,9 +69,7 @@ const FeaturedProject = ({
   technologies,
 }) => {
   return (
-    <article
-      className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
-    >
+    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] 
         bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
@@ -110,6 +108,31 @@ const FeaturedProject = ({
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
+
+        <div className="mt-2 flex items-center">
+          <motion.div
+            whileHover={{ y: -4 }}
+            whileTap={{ y: 2 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="w-10 shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <Link href={github} target="_blank">
+              <GithubIcon />
+            </Link>
+          </motion.div>
+          <motion.div
+            whileHover={{ y: -4 }}
+            whileTap={{ y: 2 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+          >
+            <Link href={link} target="_blank">
+              Visit Project
+            </Link>
+          </motion.div>
+        </div>
+
+        {/* 
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -121,7 +144,7 @@ const FeaturedProject = ({
           >
             Visit Project
           </Link>
-        </div>
+        </div> */}
         <div className="mt-4 text-sm text-dark dark:text-light">
           <strong>Technologies Used:</strong> {technologies.join(", ")}
         </div>
@@ -171,7 +194,7 @@ const Projects = () => {
         "API Integration",
         "MongoDB Integration",
         "Netlify",
-        "Render"
+        "Render",
       ],
       difficulty: "Intermediate",
     },
@@ -199,8 +222,7 @@ const Projects = () => {
       id: 3,
       title: "Ticket Generator",
       img: Ticz,
-      summary:
-        "Easily create and download tickets for your conference events.",
+      summary: "Easily create and download tickets for your conference events.",
       link: "https://conferenceticketgenerator.vercel.app/",
       github:
         "https://github.com/Hepheoluwah/HNG/tree/main/conference-ticket-generator",
@@ -212,11 +234,9 @@ const Projects = () => {
       id: 4,
       title: "Color Quest Game",
       img: ColorQuest,
-      summary:
-        "A fun and interactive game to test your color-matching skills.",
+      summary: "A fun and interactive game to test your color-matching skills.",
       link: "https://colorquest-sage.vercel.app/",
-      github:
-        "https://github.com/Hepheoluwah/HNG/tree/main/Color%20Genius",
+      github: "https://github.com/Hepheoluwah/HNG/tree/main/Color%20Genius",
       type: "Front-end",
       technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
       difficulty: "Beginner",
@@ -239,8 +259,7 @@ const Projects = () => {
       img: AitextProcessor,
       summary: "Detect, translate, and summarize text with ease",
       link: "https://ai-text-processing-umber.vercel.app/",
-      github:
-        "https://github.com/Hepheoluwah/HNG/tree/main/ai-text-processing",
+      github: "https://github.com/Hepheoluwah/HNG/tree/main/ai-text-processing",
       type: "Front-end",
       technologies: [
         "JavaScript",
@@ -248,7 +267,7 @@ const Projects = () => {
         "Tailwind",
         "API Integration",
         "Chrome API",
-        "Vercel"
+        "Vercel",
       ],
       difficulty: "Intermediate",
     },
@@ -259,8 +278,7 @@ const Projects = () => {
       summary:
         "A simple and stylish way to display user information at a glance.",
       link: "https://0xifeoluwa.vercel.app/",
-      github:
-        "https://github.com/Hepheoluwah/HNG/tree/main/Profile%20Card",
+      github: "https://github.com/Hepheoluwah/HNG/tree/main/Profile%20Card",
       type: "Front-end",
       technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
       difficulty: "Beginner",
@@ -363,13 +381,56 @@ const Projects = () => {
           />
 
           {/* Filter Controls Section */}
-          <div className="mb-8">
-            <p className="text-sm text-dark dark:text-light mb-2">
-              Use the dropdowns below to filter projects by technology, type, or difficulty. You can also click on a tag to quickly see matching projects.
+          <div className="mb-8 block sm:hidden">
+            <p className="text-sm text-dark dark:text-light mb-2 text-center">
+              Use the dropdowns below to filter projects by difficulty, type, or
+              technology.
             </p>
 
+            {/* Filter dropdowns centered on the same row */}
+            <div className="flex sm:flex-col flex-row justify-center gap-4 mb-4">
+              <select
+                value={difficultyFilter}
+                onChange={(e) => setDifficultyFilter(e.target.value)}
+                className="w-1/4 px-4 py-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+              >
+                <option value="">Filter by Difficulty</option>
+                {uniqueDifficulties.map((difficulty, index) => (
+                  <option key={index} value={difficulty}>
+                    {difficulty}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                value={typeFilter}
+                onChange={(e) => setTypeFilter(e.target.value)}
+                className="w-1/4 px-4 py-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+              >
+                <option value="">Filter by Type</option>
+                {uniqueTypes.map((type, index) => (
+                  <option key={index} value={type}>
+                    {type}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                value={technologyFilter}
+                onChange={(e) => setTechnologyFilter(e.target.value)}
+                className="w-1/4 px-4 py-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+              >
+                <option value="">Filter by Technology</option>
+                {uniqueTechnologies.map((tech, index) => (
+                  <option key={index} value={tech}>
+                    {tech}
+                  </option>
+                ))}
+              </select>
+            </div>
+
             {/* Responsive Dropdowns using Grid */}
-            <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 mb-4">
+            {/* <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 mb-4">
               <select
                 value={technologyFilter}
                 onChange={(e) => setTechnologyFilter(e.target.value)}
@@ -408,25 +469,66 @@ const Projects = () => {
                   </option>
                 ))}
               </select>
-            </div>
+            </div> */}
 
+            {/* <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 lg:grid-cols-3 mb-4">
+              <select
+                value={technologyFilter}
+                onChange={(e) => setTechnologyFilter(e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="">Select Technology</option>
+                {uniqueTechnologies.map((tech, index) => (
+                  <option key={index} value={tech}>
+                    {tech}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                value={typeFilter}
+                onChange={(e) => setTypeFilter(e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="">Select Type</option>
+                {uniqueTypes.map((type, index) => (
+                  <option key={index} value={type}>
+                    {type}
+                  </option>
+                ))}
+              </select>
+
+              <select
+                value={difficultyFilter}
+                onChange={(e) => setDifficultyFilter(e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="">Select Difficulty</option>
+                {uniqueDifficulties.map((difficulty, index) => (
+                  <option key={index} value={difficulty}>
+                    {difficulty}
+                  </option>
+                ))}
+              </select>
+            </div> */}
+            {/* 
             <div className="flex flex-wrap gap-4 sm:gap-2">
-  {uniqueTechnologies.map((tech) => (
-    <span
-      key={tech}
-      onClick={() =>
-        setTechnologyFilter(technologyFilter === tech ? "" : tech)
-      }
-      className={`cursor-pointer px-3 py-1 sm:px-4 sm:py-2 rounded-full text-sm transition-colors duration-300 ${
-        technologyFilter === tech
-          ? "bg-blue-500 text-white"
-          : "bg-gray-200 text-gray-800 hover:bg-blue-500 hover:text-white"
-      }`}
-    >
-      {tech}
-    </span>
-  ))}
-</div>
+              {uniqueTechnologies.map((tech) => (
+                <span
+                  key={tech}
+                  onClick={() =>
+                    setTechnologyFilter(technologyFilter === tech ? "" : tech)
+                  }
+                  className={`cursor-pointer px-3 py-1 sm:px-4 sm:py-2 rounded-full text-sm transition-colors duration-300 ${
+                    technologyFilter === tech
+                      ? "bg-blue-500 text-white"
+                      : "bg-gray-200 text-gray-800 hover:bg-blue-500 hover:text-white"
+                  }`}
+                >
+                  {tech}
+                </span>
+              ))}
+            </div> */}
 
             {/* Tag Cloud for Technologies
             <div className="flex flex-wrap gap-4 sm:gap-2">

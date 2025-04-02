@@ -55,7 +55,7 @@ const Experience = () => {
             company="Huawei"
             time="2021-2024"
             address="Lagos State, Nigeria"
-            work="As a Tools Automation Engineer at Huawei Technologies, I collaborated with cross-functional teams to analyze automation requirements and implement integrated solutions, enhancing operational efficiency and reducing costs. I identified opportunities for automation across various departments and processes, driving continuous improvement initiatives and streamlining workflows to support the company's long-term goals."
+            work="As a Tools Automation Engineer at Huawei Technologies, I worked closely with cross-functional teams to understand automation needs and implement integrated solutions. This helped improve operational efficiency and cut costs. I focused on identifying automation opportunities across different departments, driving continuous improvement, and streamlining workflows to align with the company&apos;s long-term objectives."
           />
 
           <Details
@@ -63,9 +63,7 @@ const Experience = () => {
             company="GGMSS"
             time="2019-2021"
             address="Kogi State, Nigeria."
-            work="
-
-At GGMSS, I developed and optimized responsive web applications using ReactJS, TypeScript, Tailwind CSS, and Redux, following ES6 best practices. I enhanced existing tools by integrating new APIs, improving data retrieval speed. Additionally, I assisted in testing and debugging secure communication protocols, ensuring industry-standard compliance. Through peer code reviews, I helped reduce production errors. I also integrated RESTful APIs, implemented CI/CD pipelines, and collaborated with designers on Figma for seamless design integration."
+            work="At GGMSS, I developed and optimized responsive web applications using ReactJS, TypeScript, Tailwind CSS, and Redux, following ES6 best practices. I worked on improving existing tools by integrating new APIs, which boosted data retrieval speed. I also played a key role in testing and debugging secure communication protocols to ensure compliance with industry standards. Through peer code reviews, I helped minimize production errors. Additionally, I integrated RESTful APIs, and collaborated with designers on Figma to ensure smooth design implementation"
           />
 
           <Details

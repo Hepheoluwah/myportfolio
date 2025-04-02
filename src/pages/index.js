@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import HireMe from "@/components/HireMe";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkIcon } from "../components/Icons";
+import { Mail } from "lucide-react";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -39,13 +40,14 @@ export default function Home() {
 
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Bringing Ideas to Life Through Code & Design"
+                text="Turning Ideas into Reality with Code & Design"
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-             
-
-              Fueled by curiosity and innovation, I transform visions into powerful, user-centric software solutions. With a passion for problem-solving, I craft applications that don’t just work—they make an impact.
+                Driven by curiosity and creativity, I bring visions to life
+                through thoughtful, user-focused software solutions. I&rsquo;m
+                passionate about solving problems and building applications that
+                not only function but truly make a difference.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
@@ -62,10 +64,19 @@ export default function Home() {
                 <Link
                   href="mailto:deniranifeoluwa@gmail.com"
                   target={"_blank"}
+                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base group flex items-center"
+                >
+                  Contact
+                  <Mail className="w-5 h-5 ml-1 transition-transform duration-300 group-hover:translate-x-1" />
+                </Link>
+
+                {/* <Link
+                  href="mailto:deniranifeoluwa@gmail.com"
+                  target={"_blank"}
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                 >
                   Contact
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -76,7 +87,6 @@ export default function Home() {
           <Image src={lightBulb} alt="ifeoluwa.dev" className="w-full h-auto" />
         </div>
       </main>
-
     </>
   );
 }
